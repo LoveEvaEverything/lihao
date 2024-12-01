@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		
+		function showText() {
+			var numberA = document.getElementById('inputA_id').value;
+			var numberB = document.getElementById('inputB_id').value;
+			var number1 = parseFloat(numberA);
+			var number2 = parseFloat(numberB);
+			if (number1 * number2 >100) {
+				alert ("Right");
+			}else{
+				alert("False");
+			}
+		}
+
+
+
+	</script>
+</head>
+<body>
+	<input type="number" id="inputA_id">
+	<input type="number" id="inputB_id">
+	<button onclick="showText()">maltiply together</button>
+</body>
+</html>

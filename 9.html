@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function showAlert(){
+			document.getElementById('text_id').innerHTML = "That's right";
+		}
+		function hideAlert(){	
+			document.getElementById('text_id').innerHTML = "";
+		}	
+		
+	</script>
+</head>
+<body>
+	<div id="text_id">Nice to meet you!</div>
+	<button onclick="showAlert()" id="button_id">HELLO</button>
+	<button onclick="hideAlert()" id="button_id">BYE-bye</button>
+	
+</body>
+</html>

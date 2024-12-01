@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function plusOne() {
+
+			var current = document.getElementById('result_id').innerHTML;
+			var result = parseInt(current) + 1;
+			if (result > 10) {
+
+			}else{
+			document.getElementById('result_id').innerHTML = result;
+			}	
+		}
+		function minus() {
+
+			var current = document.getElementById('result_id').innerHTML;
+			var result = parseInt(current) - 1;
+			if (result < 0) {
+
+			}else{
+			document.getElementById('result_id').innerHTML = result;
+			}
+		}	
+	</script>
+</head>
+<body>
+	<div id=result_id>0</div>
+	<button onclick="plusOne()">+1</button>
+	<button onclick="minus()">-1</button>
+</body>
+</html>

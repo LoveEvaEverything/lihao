@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		
+		function showText() {
+			var data = document.getElementById('input_id').value
+			var number = parseFloat(data);
+			if (number >= 0 && number <= 18) {
+				alert ("child");
+			}else if(number >= 19 && number <= 60){
+				alert("adult");
+			}else if(number >= 61){
+				alert ("elder");
+			}else{
+				alert("else");
+			}
+		}
+
+
+
+	</script>
+</head>
+<body>
+	<input type="number" id="input_id">
+	<button onclick="showText()">show alert</button>
+</body>
+</html>

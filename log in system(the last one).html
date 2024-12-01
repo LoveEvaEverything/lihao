@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<script type="text/javascript">
+		function login(){
+         var accountName = document.getElementById('name_id').value;
+         var accountPassword = document.getElementById('password_id').value;
+         if (accountName == "li" && accountPassword == "12345") {
+				alert("Login successfully");
+				location.href="the%20website.html"
+		}else{
+			alert("Login failed");
+			document.getElementById('name_id').value = "";
+			document.getElementById('password_id').value = "";
+		}
+}
+	</script>
+</head>
+<body>
+	<div id="frame_id">
+		<div id="title_id">LOGIN SYSTEM<br>name:li password:12345</div>
+		<br>
+		<div><input type="password" id="name_id"></div>
+		<br>
+		<div><input type="password" id="password_id"></div>
+		<br>
+		<button onclick="login()">LOGINS</button>
+	</div>
+
+
+</body>
+</html>

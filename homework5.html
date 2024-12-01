@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		
+		function showText() {
+			var dataa = document.getElementById('inputa_id').value
+			var numbera = parseFloat(dataa);
+			var datab = document.getElementById('inputb_id').value
+			var numberb = parseFloat(datab);			
+			if (numbera + numberb >= 100) {
+				alert ("true");
+			}else{
+				alert("no");
+			}
+			
+		}
+
+
+
+	</script>
+</head>
+<body>
+	<input type="number" id="inputa_id">
+	<br>
+	<input type="number" id="inputb_id">	
+	<button onclick="showText()">show alert</button>
+</body>
+</html>

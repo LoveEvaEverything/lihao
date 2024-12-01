@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#frame_id{
+			width: 600px;
+			height: 800px;
+			background: lightblue;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -300px;
+			margin-top: -200px;
+			text-align: center;
+		}
+		button{
+			width: 50px;
+			height: 50px;
+			border-radius: 50px;
+		}
+		#equal_id{
+			background: orange;
+		}
+		
+	</style>
+	
+	<script type="text/javascript">
+		var tag;
+		function saveTag(tagOp) {
+			tag = tagOp;
+		}
+
+		function calculater() {
+			var number01 = parseInt(document.getElementById('numberA_id').value);
+			var number02 = parseInt(document.getElementById('numberB_id').value);			
+			var result = 0;
+			if (tag == "+") {
+				result = number01 + number02;
+			}else if (tag == "-"){
+				result = number01 - number02; 
+			}else if(tag == "*"){
+				result = number01 * number02;
+			}else if (tag == "/"){
+				result = number01 /number02;
+			}
+			document.getElementById('result_id').innerHTML = result;
+			alert(result);
+
+		}
+
+
+
+
+	</script>
+
+</head>
+<body>
+	<div id="frame_id">
+		<input type="number" id="numberA_id">
+		<br><br>
+		<input type="number" id="numberB_id">
+		<br><br><br><br>
+		<button onclick="saveTag('+')">+</button>
+		<button onclick="saveTag('-')">-</button>
+		<button onclick="savetag('*')">*</button>
+		<button onclick="saveTag('/')">/</button>
+		<button id= equal_id onclick="calculater()">=</button>
+		<div id="result_id"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="able.css">
+	<script type="text/javascript">
+		function showNews() {
+			document.getElementById('iframe_id').src = "7.html";
+		}
+		function naruto() {
+			document.getElementById('iframe_id').src ="3.html";
+		}
+		function magazine(){
+			document.getElementById('iframe_id').src ="homework3.html";
+		}
+		function information() {
+			document.getElementById('iframe_id').src ="information.html";
+		}
+		function calculater() {
+
+			document.getElementById('iframe_id').src = "16.html";
+		}
+	</script>
+</head>
+<body>
+	<div class="title_class">
+		<div id="title_id">Welcome to my website</div>
+	</div>
+	<div class ="menu_class">
+		<div class="item_class" onclick="showNews()">News</div>
+		<div class="item_class" onclick="naruto()">Naruto</div>
+		<div class="item_class" onclick="magazine()">Daily life</div>
+		<div class="item_class" onclick="information()">Information</div>
+		<div class="item_class" onclick="calculater()">Calculater</div>		
+	</div>
+	<div class="content_class">
+		<iframe src="4.html" frameborder = 0 id="iframe_id"></iframe>
+	</div>
+	<div class="bottom_class">Li hao's website.Welcome here!</div>
+
+</body>
+</html>

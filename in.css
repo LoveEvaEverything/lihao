@@ -1,0 +1,30 @@
+html{
+	height: 1000px;
+	width: 100%;
+}
+body{
+	height: 100%;
+	margin: 0px;
+}
+#left_id{
+	height: 100%;
+	width: 50%;
+	background: darkcyan;
+	float: left;
+}
+#right_id{
+	height: 100%;
+	width: 50%;
+	background: skyblue;
+	float: left;
+}
+#name_id{
+	text-align: center;
+	font-size: 50px;
+
+}
+#ending_id{
+	color: darkcyan;
+	font-size: 50px;
+	font-family: sans-serif;
+}
